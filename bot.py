@@ -94,8 +94,7 @@ class Bot(Client):
             messages = await self.get_messages(chat_id, list(range(current, current+new_diff+1)))
             for message in messages:
                 yield message
-    pyroutils.MIN_CHAT_ID = -999999999999
-pyroutils.MIN_CHANNEL_ID = -100999999999999            current += 1
+                current += 1
 
 
 app = Bot()
